@@ -1,0 +1,168 @@
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>U Properties Ltd</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="{% static 'images/apple-touch-iconn.png' %}" type="img/x-icon" rel="shortcut icon">
+    <!-- All css files are included here. -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+    <link rel="stylesheet" href="{% static 'css/shortcode/shortcodes.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- customizer style css -->
+    <link rel="stylesheet" href="{% static 'css/style-customizer.css' %}">
+    <link href="#" data-style="styles" rel="stylesheet">
+
+
+    <!-- Modernizr JS -->
+    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+</head>
+<body>
+    <div class="wrapper white_bg">
+        <!--Header section start-->
+        {% include 'includes/header.html' %}
+        <!--Header section end-->
+
+        <!--Breadcrumbs start-->
+        <div class="breadcrumbs overlay-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumbs-inner">
+                            <div class="breadcrumbs-title text-center">
+                                <h1>Services</h1>
+                            </div>
+                            <div class="breadcrumbs-menu">
+                                <ul>
+                                    <li><a href="{% url 'home' %}">Home /</a></li>
+                                    <li>Services</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Breadcrumbs end-->
+
+        <!--Services section start-->
+        <div class="services-section ptb-130 bg-1">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="section-title text-center">
+                            <h3>OUR SERVICES</h3>
+                            <p>U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                which can be particularly important for families and individuals seeking long-term stability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-12">
+                        <div class="single-services wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
+                            <div class="single-services-img">
+                                <img src="{% static 'images/service/1.png' %}" alt="">
+                            </div>
+                            <div class="single-services-desc">
+                                <h5>Buy Property</h5>
+                                <p>U Properties the best theme for elit, sed do eiumod tempor dolor sit amet, conse ctetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="single-services wow fadeInUp" data-wow-duration="1.4s" data-wow-delay="0.2s">
+                            <div class="single-services-img">
+                                <img src="{% static 'images/service/2.png' %}" alt="">
+                            </div>
+                            <div class="single-services-desc">
+                                <h5>Sale Property</h5>
+                                <p>U Properties the best theme for elit, sed do eiumod tempor dolor sit amet, conse ctetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="single-services wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
+                            <div class="single-services-img">
+                                <img src="{% static 'images/service/3.png' %}" alt="">
+                            </div>
+                            <div class="single-services-desc">
+                                <h5>rent Property</h5>
+                                <p>U Properties the best theme for elit, sed do eiumod tempor dolor sit amet, conse ctetur
+                                    adipiscing elit, sed do eiusmod tempor incididunt ut </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Services section end-->
+
+        <!--Brand section start-->
+        <div class="brand-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="brand-list owl-carousel">
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/1.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/2.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/3.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/4.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/5.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/1.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="img/brand/2.png" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="img/brand/3.png" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="img/brand/4.png" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="img/brand/5.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Brand section end-->
+
+        <!-- Footer section start -->
+        {% include 'includes/footer.html' %}
+        <!-- Footer section end -->
+
+
+ <!-- All jquery file included here -->
+    <script src="{% static 'js/vendor/jquery-1.12.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nivo.slider.pack.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/ajax-mail.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+    <script src="{% static 'js/style-customizer.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    </div>
+</body>

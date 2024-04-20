@@ -25,174 +25,9 @@
 </head>
 
 <body>
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <!--Preloader start-->
-    <div id="fakeLoader"></div>
-    <!--Preloader end-->
     <div class="wrapper white_bg">
         <!--Header section start-->
-        <header class="header">
-            <div class="header-top sticky-header">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-2 col-md-4 col-sm-6">
-                            <div class="lo mt-3">
-                                <a href="{% url 'home' %}"><img src="{% static 'images/logo/ulogo.png' %}" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="col-lg-10 d-none d-lg-block">
-                            <div class="mgea-full-width">
-                                <div class="header-menu">
-                                    <nav>
-                                        <ul>
-                                            <li><a href="{% url 'home' %}">Home</a>
-                                            </li>
-                                            <li><a href="about-us.html">About</a></li>
-                                            <li><a href="properties.html"> PROPERTIES</a>
-                                            </li>
-                                            <li><a href="#">AGENTS</a>
-                                                <ul class="dropdown_menu">
-                                                    <li><a href="agent.html">Agent page</a></li>
-                                                    <li><a href="agent-details.html">Agent Details</a></li>
-                                                    <li><a href="agency.html">Agency page</a></li>
-                                                </ul>
-                                            </li>
-
-                                            <li><a href="blog.html"> BLOG</a>
-                                            </li>
-                                            <li class="mega-parent"><a href="elements.html">ELEMENTS</a>
-                                            </li>
-                                            <li><a href="{% url 'contact' %}"> Contact</a></li>
-                                            <li><a href="add-property.html">+ ADD PROPERTY</a>
-                                                <ul class="dropdown_menu">
-                                                    <li><a href="login.html">login</a></li>
-                                                    <li><a href="register.html">register</a></li>
-
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mobile menu start -->
-                <div class="mobile-menu-area d-block d-lg-none">
-                    <div class="container">
-                        <div class="col-12">
-                            <nav id="dropdown">
-                                <ul>
-                                    <li><a href="index.html">Home</a>
-                                        <ul>
-                                            <li><a href="index.html">Home Version 1</a></li>
-                                            <li><a href="index-2.html">Home Version 2</a></li>
-                                            <li><a href="index-3.html">Home Version 3</a></li>
-                                            <li><a href="index-4.html">Home Version 4</a></li>
-                                            <li><a href="index-5.html">Home Version 5</a></li>
-                                            <li><a href="index-6.html">Home Version 6</a></li>
-                                            <li><a href="index-7.html">Home Version 7</a></li>
-                                            <li><a href="index-8.html">Home Version 8</a></li>
-                                            <li><a href="index-9.html">Home Version 9</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="about-us.html">About</a></li>
-                                    <li><a href="blog.html"> BLOG</a>
-                                        <ul>
-                                            <li><a href="blog.html">Blog pages</a></li>
-                                            <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                                            <li><a href="blog-sidebar.html">Blog Sidebar</a></li>
-                                            <li><a href="blog-right-sidebar.html">Blog right Sidebar</a></li>
-                                            <li><a href="article.html">Blog details</a></li>
-                                            <li><a href="article-left-sidebar.html">Blog details left sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">pages</a>
-                                        <ul>
-                                            <li><a href="about-us.html">About us</a></li>
-                                            <li><a href="contact.html">contact us</a></li>
-                                            <li><a href="404.html">404</a></li>
-                                            <li><a href="add-property.html">Add property</a></li>
-                                            <li><a href="feature.html">Feature</a></li>
-                                            <li><a href="login.html">login</a></li>
-                                            <li><a href="register.html">register</a></li>
-                                            <li><a href="my-account.html">My account</a></li>
-                                            <li><a href="services.html">Services page</a></li>
-                                            <li><a href="single-services.html">Single Services</a></li>
-                                            <li><a href="single-services-2.html">Single Services 2 </a></li>
-                                        </ul>
-                                    </li>
-
-                                    <li><a href="properties.html">PROPERTIES </a>
-                                        <ul>
-                                            <li><a href="properties.html">Properties page</a></li>
-                                            <li><a href="single-properties.html">Single Properties</a></li>
-                                            <li><a href="properties-sidebar.html">Properties sidebar</a></li>
-                                            <li><a href="properties-right-sidebar.html">Properties right sidebar</a>
-                                            </li>
-                                            <li><a href="properties-list-sidebar.html">Properties list sidebar</a></li>
-                                            <li><a href="properties-list-right-sidebar.html">Properties list right
-                                                    sidebar</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="agent.html">AGENT</a>
-                                        <ul>
-                                            <li><a href="agent.html">Agent page</a></li>
-                                            <li><a href="agent-details.html">Agent Details</a></li>
-                                            <li><a href="agency.html">Agency page</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#">Elements</a>
-                                        <ul>
-                                            <li><a href="#" class="title">Column 1</a>
-                                                <ul>
-                                                    <li><a href="elements-accordion.html">Accordion</a></li>
-                                                    <li><a href="elements-agent.html">Agent</a></li>
-                                                    <li><a href="elements-alerts.html">Alerts</a></li>
-                                                    <li><a href="elements-audio.html">Audio</a></li>
-                                                    <li><a href="elements-video.html">Video</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#" class="title">Column 2</a>
-                                                <ul>
-                                                    <li><a href="elements-blog.html">Blog</a></li>
-                                                    <li><a href="elements-client-review.html">Cleint review</a></li>
-                                                    <li><a href="elements-contact-form.html">Contact form</a></li>
-                                                    <li><a href="elements-fun-factor.html">Fun factor</a></li>
-                                                    <li><a href="elements-progressbar.html">progress bar</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#" class="title">Column 3</a>
-                                                <ul>
-                                                    <li><a href="elements-properties.html">Properties</a></li>
-                                                    <li><a href="elements-map.html">Map</a></li>
-                                                    <li><a href="elements-map-2.html">Map 2</a></li>
-                                                    <li><a href="elements-services.html">Services</a></li>
-                                                    <li><a href="elements-tab.html">Tab</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#" class="title">Column 4</a>
-                                                <ul>
-                                                    <li><a href="elements-sticky.html">Sticky page</a></li>
-                                                    <li><a href="elements-table.html">Table</a></li>
-                                                    <li><a href="elements-typography.html">typography</a></li>
-                                                    <li><a href="single-services.html">single services</a></li>
-                                                    <li><a href="single-properties.html">single properties</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="contact.html"> Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-                <!-- Mobile menu end -->
-            </div>
-        </header>
+        {% include 'includes/navbar.html' %}
         <!--Header section end-->
         <!--slider section start-->
         <div class="slider-container overlay">
@@ -220,9 +55,7 @@
                                                 <h1><span>U Properties Ltd</span> SOLVE YOUR PROBLEMS</h1>
                                             </div>
                                             <div class="desc wow fadeUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
-                                                <p>Lorem consectetur adipiscing elit, sed do eiusmod tempor dolor sit
-                                                    amet<br> contetur adipiscing elit, sed do eiusmod tempor incididunt
-                                                </p>
+                                                <!-- <p></p>-->
                                             </div>
                                             <div class="contact-us wow fadeUp" data-wow-duration="1.5s"
                                                 data-wow-delay=".5s">
@@ -253,9 +86,7 @@
                                                 <h1><span>U Properties Ltd</span> SOLVE YOUR PROBLEMS</h1>
                                             </div>
                                             <div class="desc wow fadeUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
-                                                <p>Lorem consectetur adipiscing elit, sed do eiusmod tempor dolor sit
-                                                    amet<br> contetur adipiscing elit, sed do eiusmod tempor incididunt
-                                                </p>
+                                                <!--<p></p>-->
                                             </div>
                                             <div class="contact-us wow fadeUp" data-wow-duration="1.5s"
                                                 data-wow-delay=".5s">
@@ -286,9 +117,7 @@
                                                 <h1><span>U Properties Ltd</span> SOLVE YOUR PROBLEMS</h1>
                                             </div>
                                             <div class="desc wow fadeUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
-                                                <p>Lorem consectetur adipiscing elit, sed do eiusmod tempor dolor sit
-                                                    amet<br> contetur adipiscing elit, sed do eiusmod tempor incididunt
-                                                </p>
+                                                <!--<p></p>-->
                                             </div>
                                             <div class="contact-us wow fadeUp" data-wow-duration="1.5s"
                                                 data-wow-delay=".5s">
@@ -821,9 +650,8 @@
                                 <h3 class="title-2">AND GET NOTIFICATION FOR NEW PROPERTIES</h3>
                             </div>
                             <div class="download-apps-bottom">
-                                <p>Haven the best theme for elit, sed do eiusmod tempor dolor sit amet, conse ctetur
-                                    apiscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd
-                                    minimam</p>
+                                <p>U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability</p>
                                 <a href="#">DOWNLOAD</a>
                             </div>
                         </div>
@@ -846,9 +674,8 @@
                     <div class="col-lg-8">
                         <div class="section-title text-center">
                             <h3>OUR SERVICES</h3>
-                            <p>Haven the best theme for elit, sed do eiusmod tempor dolor sit amet, conse ctetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd minimam,
-                                quis nostrud exercitation.</p>
+                            <p>U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                which can be particularly important for families and individuals seeking long-term stability</p>
                         </div>
                     </div>
                 </div>
@@ -901,7 +728,7 @@
                     <div class="col-lg-8">
                         <div class="section-title text-center">
                             <h3>FEATURED PROPERTY</h3>
-                            <p>Haven the best theme for elit, sed do eiusmod tempor dolor sit amet, conse ctetur
+                            <p>U Properties Ltd is  the best site for elit, sed do eiusmod tempor dolor sit amet, conse ctetur
                                 adipiscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd minimam,
                                 quis nostrud exercitation.</p>
                         </div>
@@ -1163,9 +990,8 @@
                     <div class="col-lg-8">
                         <div class="section-title text-center">
                             <h3>AWESOME FEATURES</h3>
-                            <p>Haven the best theme for elit, sed do eiusmod tempor dolor sit amet, conse ctetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd minimam,
-                                quis nostrud exercitation.</p>
+                            <p>U Properties the best site for rent & sell, we have some best features. fully furnished apartment,
+                                Paint cost provides are best</p>
                         </div>
                     </div>
                 </div>
@@ -1277,189 +1103,115 @@
         <!--Awesome Feature section end-->
 
         <!--Fun fact area start-->
-        <div class="fun-fact overlay-blue">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3 col-12">
-                        <div class="singe-fun-fact  f-left">
-                            <div class="fun-head">
-                                <div class="fun-icon">
-                                    <i class="fa fa-home"></i>
-                                </div>
-                                <div class="fun-count">
-                                    <h3 class="counter">
-                                        999
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="fun-text">
-                                <p>Complete Project</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <div class="singe-fun-fact middle">
-                            <div class="fun-head">
-                                <div class="fun-icon">
-                                    <i class="fa fa-key"></i>
-                                </div>
-                                <div class="fun-count">
-                                    <h3 class="counter">
-                                        999
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="fun-text">
-                                <p>Property Sold</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <div class="singe-fun-fact text-center middle-2">
-                            <div class="fun-head">
-                                <div class="fun-icon">
-                                    <i class="zmdi zmdi-mood"></i>
-                                </div>
-                                <div class="fun-count">
-                                    <h3 class="counter">
-                                        450
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="fun-text">
-                                <p>Happy Clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-12">
-                        <div class="singe-fun-fact f-right">
-                            <div class="fun-head">
-                                <div class="fun-icon">
-                                    <i class="fa fa-trophy"></i>
-                                </div>
-                                <div class="fun-count">
-                                    <h3 class="counter">
-                                        120
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="fun-text">
-                                <p>Awards Win</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!--Fun fact area end-->
 
         <!--Team area start-->
-        <div class="team-area bg-1">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title text-center">
-                            <h3>HERE IS OUR AGENTS</h3>
-                            <p>Haven the best theme for elit, sed do eiusmod tempor dolor sit amet, conse ctetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd minimam,
-                                quis nostrud exercitation.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-team wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">
-                            <div class="team-img">
-                                <a href="agent-details.html">
-                                    <img src="{% static 'images/team/1.jpg' %}" alt="">
-                                </a>
-                            </div>
-                            <div class="team-desc">
-                                <div class="team-member-title">
-                                    <h6><a href="agent-details.html">Stephen de Smith</a></h6>
-                                    <p>Real Estate Agent</p>
-                                </div>
-                                <div class="team-member-social">
-                                    <a href="#"><i class="zmdi zmdi-phone-in-talk"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-team wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">
-                            <div class="team-img">
-                                <a href="agent-details.html">
-                                    <img src="{% static 'images/team/2.jpg' %}" alt="">
-                                </a>
-                            </div>
-                            <div class="team-desc">
-                                <div class="team-member-title">
-                                    <h6>
-                                        <a href="agent-details.html">Stephen de Smith</a>
-                                    </h6>
-                                    <p>Real Estate Agent</p>
-                                </div>
-                                <div class="team-member-social">
-                                    <a href="#"><i class="zmdi zmdi-phone-in-talk"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-team wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1.4s">
-                            <div class="team-img">
-                                <a href="agent-details.html">
-                                    <img src="{% static 'images/team/3.jpg' %}" alt="">
-                                </a>
-                            </div>
-                            <div class="team-desc">
-                                <div class="team-member-title">
-                                    <h6>
-                                        <a href="agent-details.html">Stephen de Smith</a>
-                                    </h6>
-                                    <p>Real Estate Agent</p>
-                                </div>
-                                <div class="team-member-social">
-                                    <a href="#"><i class="zmdi zmdi-phone-in-talk"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-12">
-                        <div class="single-team wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">
-                            <div class="team-img">
-                                <a href="agent-details.html">
-                                    <img src="{% static 'images/team/4.jpg' %}" alt="">
-                                </a>
-                            </div>
-                            <div class="team-desc">
-                                <div class="team-member-title">
-                                    <h6>
-                                        <a href="agent-details.html">Stephen de Smith</a>
-                                    </h6>
-                                    <p>Real Estate Agent</p>
-                                </div>
-                                <div class="team-member-social">
-                                    <a href="#"><i class="zmdi zmdi-phone-in-talk"></i></a>
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-google-plus"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!--        <div class="team-area bg-1">-->
+<!--            <div class="container">-->
+<!--                <div class="row justify-content-center">-->
+<!--                    <div class="col-lg-8">-->
+<!--                        <div class="section-title text-center">-->
+<!--                            <h3>HERE IS OUR AGENTS</h3>-->
+<!--                            <p>Haven the best theme for elit, sed do eiusmod tempor dolor sit amet, conse ctetur-->
+<!--                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd minimam,-->
+<!--                                quis nostrud exercitation.</p>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-3 col-md-6 col-12">-->
+<!--                        <div class="single-team wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="1.2s">-->
+<!--                            <div class="team-img">-->
+<!--                                <a href="agent-details.html">-->
+<!--                                    <img src="{% static 'images/team/1.jpg' %}" alt="">-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="team-desc">-->
+<!--                                <div class="team-member-title">-->
+<!--                                    <h6><a href="agent-details.html">Stephen de Smith</a></h6>-->
+<!--                                    <p>Real Estate Agent</p>-->
+<!--                                </div>-->
+<!--                                <div class="team-member-social">-->
+<!--                                    <a href="#"><i class="zmdi zmdi-phone-in-talk"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-facebook"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-google-plus"></i></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-3 col-md-6 col-12">-->
+<!--                        <div class="single-team wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">-->
+<!--                            <div class="team-img">-->
+<!--                                <a href="agent-details.html">-->
+<!--                                    <img src="{% static 'images/team/2.jpg' %}" alt="">-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="team-desc">-->
+<!--                                <div class="team-member-title">-->
+<!--                                    <h6>-->
+<!--                                        <a href="agent-details.html">Stephen de Smith</a>-->
+<!--                                    </h6>-->
+<!--                                    <p>Real Estate Agent</p>-->
+<!--                                </div>-->
+<!--                                <div class="team-member-social">-->
+<!--                                    <a href="#"><i class="zmdi zmdi-phone-in-talk"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-facebook"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-google-plus"></i></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-3 col-md-6 col-12">-->
+<!--                        <div class="single-team wow fadeInUp" data-wow-delay="0.4s" data-wow-duration="1.4s">-->
+<!--                            <div class="team-img">-->
+<!--                                <a href="agent-details.html">-->
+<!--                                    <img src="{% static 'images/team/3.jpg' %}" alt="">-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="team-desc">-->
+<!--                                <div class="team-member-title">-->
+<!--                                    <h6>-->
+<!--                                        <a href="agent-details.html">Stephen de Smith</a>-->
+<!--                                    </h6>-->
+<!--                                    <p>Real Estate Agent</p>-->
+<!--                                </div>-->
+<!--                                <div class="team-member-social">-->
+<!--                                    <a href="#"><i class="zmdi zmdi-phone-in-talk"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-facebook"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-google-plus"></i></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-3 col-md-6 col-12">-->
+<!--                        <div class="single-team wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1.5s">-->
+<!--                            <div class="team-img">-->
+<!--                                <a href="agent-details.html">-->
+<!--                                    <img src="{% static 'images/team/4.jpg' %}" alt="">-->
+<!--                                </a>-->
+<!--                            </div>-->
+<!--                            <div class="team-desc">-->
+<!--                                <div class="team-member-title">-->
+<!--                                    <h6>-->
+<!--                                        <a href="agent-details.html">Stephen de Smith</a>-->
+<!--                                    </h6>-->
+<!--                                    <p>Real Estate Agent</p>-->
+<!--                                </div>-->
+<!--                                <div class="team-member-social">-->
+<!--                                    <a href="#"><i class="zmdi zmdi-phone-in-talk"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-facebook"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-twitter"></i></a>-->
+<!--                                    <a href="#"><i class="fa fa-google-plus"></i></a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
         <!--Team area end-->
 
         <!--Latest blog start-->
@@ -1469,9 +1221,7 @@
                     <div class="col-lg-8">
                         <div class="section-title text-center">
                             <h3>LATEST FROM THE BLOG</h3>
-                            <p>Haven the best theme for elit, sed do eiusmod tempor dolor sit amet, conse ctetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd minimam,
-                                quis nostrud exercitation.</p>
+                            <p>U Properties is the best site for rent & sell property, here some blog.</p>
                         </div>
                     </div>
                 </div>
@@ -1487,16 +1237,15 @@
                                         20
                                     </span>
                                     <span class="post-month">
-                                        March
+                                        April
                                     </span>
                                 </div>
                             </div>
                             <div class="blog-desc">
                                 <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
-                                <p class="post-content">Haven the best theme for elit, sed do eiusmod tempor dolor sit
-                                    amet, conse ctetur adipiscing elit, sed do eismod tempor incididunt </p>
+                                <p class="post-content">U Properties is the best site ......</p>
                                 <div class="bolg-continue">
-                                    <a href="article.html">Continure Reading ></a>
+                                    <a href="article.html">Continue Reading... ></a>
                                 </div>
                             </div>
                         </div>
@@ -1509,19 +1258,19 @@
                                 </a>
                                 <div class="blog-post">
                                     <span class="post-day">
-                                        20
+                                        15
                                     </span>
                                     <span class="post-month">
-                                        March
+                                        April
                                     </span>
                                 </div>
                             </div>
                             <div class="blog-desc">
                                 <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
-                                <p class="post-content">Haven the best theme for elit, sed do eiusmod tempor dolor sit
-                                    amet, conse ctetur adipiscing elit, sed do eismod tempor incididunt </p>
+                                <p class="post-content">U Properties is the best site ......</p>
+
                                 <div class="bolg-continue">
-                                    <a href="article.html">Continure Reading ></a>
+                                    <a href="article.html">Continue Reading... ></a>
                                 </div>
                             </div>
                         </div>
@@ -1543,10 +1292,10 @@
                             </div>
                             <div class="blog-desc">
                                 <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
-                                <p class="post-content">Haven the best theme for elit, sed do eiusmod tempor dolor sit
-                                    amet, conse ctetur adipiscing elit, sed do eismod tempor incididunt </p>
+                                <p class="post-content">U Properties is the best site ......</p>
+
                                 <div class="bolg-continue">
-                                    <a href="article.html">Continure Reading ></a>
+                                    <a href="article.html">Continue Reading... ></a>
                                 </div>
                             </div>
                         </div>
@@ -1557,138 +1306,6 @@
         <!--Latest blog end-->
 
         <!--Happy client section start-->
-        <div class="happy-client wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="1.3s">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title text-center">
-                            <h3>HERE IS THE REVIEW OF OUR HAPPY CLIENTS</h3>
-                            <p>Haven the best theme for elit, sed do eiusmod tempor dolor sit amet, conse ctetur
-                                adipiscing elit, sed do eiusmod tempor incididunt ut labore et lorna aliquatd minimam,
-                                quis nostrud exercitation.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="happy-client-list owl-carousel">
-                            <div class="item">
-                                <div class="client-reveiw">
-                                    <div class="review-quote">
-                                        <i class="fa fa-quote-right"></i>
-                                    </div>
-                                    <div class="review-desc">
-                                        <p> <span>HAVEN</span> is the best theme for elit sed do od tempor dolor sit
-                                            amet conse tetur adipiscingit</p>
-                                    </div>
-                                    <div class="happy-client-name">
-                                        <h6>James Bond, <span>CEO</span></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-reveiw">
-                                    <div class="review-quote">
-                                        <i class="fa fa-quote-right"></i>
-                                    </div>
-                                    <div class="review-desc">
-                                        <p> <span>HAVEN</span> is the best theme for elit sed do od tempor dolor sit
-                                            amet conse tetur adipiscingit</p>
-                                    </div>
-                                    <div class="happy-client-name">
-                                        <h6>Nirob Khan, <span>COO</span></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-reveiw">
-                                    <div class="review-quote">
-                                        <i class="fa fa-quote-right"></i>
-                                    </div>
-                                    <div class="review-desc">
-                                        <p> <span>HAVEN</span> is the best theme for elit sed do od tempor dolor sit
-                                            amet conse tetur adipiscingit</p>
-                                    </div>
-                                    <div class="happy-client-name">
-                                        <h6>Lara Craft, <span>CEO</span></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-reveiw">
-                                    <div class="review-quote">
-                                        <i class="fa fa-quote-right"></i>
-                                    </div>
-                                    <div class="review-desc">
-                                        <p> <span>HAVEN</span> is the best theme for elit sed do od tempor dolor sit
-                                            amet conse tetur adipiscingit</p>
-                                    </div>
-                                    <div class="happy-client-name">
-                                        <h6>Zenefer Lopez, <span>CEO</span></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-reveiw">
-                                    <div class="review-quote">
-                                        <i class="fa fa-quote-right"></i>
-                                    </div>
-                                    <div class="review-desc">
-                                        <p> <span>HAVEN</span> is the best theme for elit sed do od tempor dolor sit
-                                            amet conse tetur adipiscingit</p>
-                                    </div>
-                                    <div class="happy-client-name">
-                                        <h6>James Bond, <span>CEO</span></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-reveiw">
-                                    <div class="review-quote">
-                                        <i class="fa fa-quote-right"></i>
-                                    </div>
-                                    <div class="review-desc">
-                                        <p> <span>HAVEN</span> is the best theme for elit sed do od tempor dolor sit
-                                            amet conse tetur adipiscingit</p>
-                                    </div>
-                                    <div class="happy-client-name">
-                                        <h6>Nirob Khan, <span>COO</span></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-reveiw">
-                                    <div class="review-quote">
-                                        <i class="fa fa-quote-right"></i>
-                                    </div>
-                                    <div class="review-desc">
-                                        <p> <span>HAVEN</span> is the best theme for elit sed do od tempor dolor sit
-                                            amet conse tetur adipiscingit</p>
-                                    </div>
-                                    <div class="happy-client-name">
-                                        <h6>Lara Craft, <span>CEO</span></h6>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="client-reveiw">
-                                    <div class="review-quote">
-                                        <i class="fa fa-quote-right"></i>
-                                    </div>
-                                    <div class="review-desc">
-                                        <p> <span>HAVEN</span> is the best theme for elit sed do od tempor dolor sit
-                                            amet conse tetur adipiscingit</p>
-                                    </div>
-                                    <div class="happy-client-name">
-                                        <h6>Zenefer Lopez, <span>CEO</span></h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <!--Happy client section end-->
 
         <!--Brand section start-->
@@ -1698,34 +1315,19 @@
                     <div class="col-12">
                         <div class="brand-list owl-carousel">
                             <div class="single-brand">
-                                <a href="#"><img src="{% static 'images/brand/1.png' %}" alt=""></a>
+                                <a href="#"><img src="{% static 'images/brand/zk.png' %}" alt=""></a>
                             </div>
                             <div class="single-brand">
-                                <a href="#"><img src="{% static 'images/brand/2.png' %}" alt=""></a>
+
                             </div>
                             <div class="single-brand">
-                                <a href="#"><img src="{% static 'images/brand/3.png' %}" alt=""></a>
+                                <a href="#"><img src="{% static 'images/brand/zk.png' %}" alt=""></a>
                             </div>
                             <div class="single-brand">
-                                <a href="#"><img src="{% static 'images/brand/4.png' %}" alt=""></a>
+
                             </div>
                             <div class="single-brand">
-                                <a href="#"><img src="{% static 'images/brand/5.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'images/brand/1.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'images/brand/2.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'images/brand/3.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'images/brand/4.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'images/brand/5.png' %}" alt=""></a>
+                                <a href="#"><img src="{% static 'images/brand/zk.png' %}" alt=""></a>
                             </div>
                         </div>
                     </div>
@@ -1733,98 +1335,12 @@
             </div>
         </div>
         <!--Brand section end-->
-            <footer class="footer wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
-                <!--Footer bottom start-->
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-4 col-12 mt-3">
-                                <a href="#"><img src="{% static 'images/logo/ulogo.png' %}" alt=""></a>
-                                <div class="newsletter mt-3">
-                                    <div class="newsletter-form">
-                                                <div id="mc_embed_signup">
-                                                    <form
-                                                        action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef"
-                                                        method="post" id="mc-embedded-subscribe-form"
-                                                        name="mc-embedded-subscribe-form" class="validate"
-                                                        target="_blank" novalidate>
-                                                        <div id="mc_embed_signup_scroll">
-                                                            <input type="email" class="email" id="mce-EMAIL"
-                                                                placeholder="email address" required>
-                                                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                                            <div style="position: absolute; left: -5000px;"
-                                                                aria-hidden="true">
-                                                                <input type="text"
-                                                                    name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef"
-                                                                    tabindex="-1" value="">
-                                                            </div>
-                                                            <div class="clear">
-                                                                <button type="submit" id="mc-embedded-subscribe"
-                                                                    class="button"><i
-                                                                        class="fa fa-paper-plane"></i></button>
 
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                </div>
-
-                            </div>
-                            <div class="col-lg-4 col-12">
-
-                            </div>
-                            <div class="col-lg-4 col-12">
-                                <div class="contact-head mt-3">
-                                            <h2>CONTACT US</h2>
-                                            <p>U Properties Ltd the best theme for elit,<br>sed do eiusmod tempor dolor sit </p>
-                                        </div>
-                                <div class="f-contact-details">
-                                            <div class="single-contact-list">
-                                                <div class="contact-icon">
-                                                    <img src="{% static 'images/icon/c-1.png' %}" alt="">
-                                                </div>
-                                                <div class="contact-text">
-                                                    <p>547/2, 3rd Floor, ECB Chattar</p>
-                                                    <p>Dhaka Cantonment , Dhaka-1206</p>
-                                                </div>
-                                            </div>
-                                            <div class="single-contact-list">
-                                                <div class="contact-icon">
-                                                    <img src="{% static 'images/icon/c-2.png' %}" alt="">
-                                                </div>
-                                                <div class="contact-text">
-                                                    <p>Telephone : +880 1975 353534</p>
-                                                    <p>Telephone : +880 1970 706077</p>
-                                                </div>
-                                            </div>
-                                            <div class="single-contact-list">
-                                                <div class="contact-icon">
-                                                    <img src="{% static 'images/icon/c-3.png' %}" alt="">
-                                                </div>
-                                                <div class="contact-text">
-                                                    <p>Email : info@upropertiesltd.com</p>
-                                                    <p>Web : www.upropertiesltd.com</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-7 col-12">
-                            </div>
-                            <div class="col-lg-5 col-12">
-                                <div class="copyright">
-                                    <p><strong>U Properties Ltd </strong> Made with ❤️ by <a href="https://www.facebook.com/profile.php?id=61550087207132" target="_blank"><strong>sharod</strong></a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Footer bottom end-->
-            </footer>
+        <!-- Footer section start -->
+        {% include 'includes/footer.html' %}
+        <!-- Footer section end -->
     </div>
+
 
     <!-- Map js code here -->
     <script src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29199.102929274715!2d90.35652011059936!3d23.82258616832395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c6c2ab936b87%3A0xcaa915c4069493be!2sECB%20Chattar%2C%20Dhaka!5e0!3m2!1sen!2sbd!4v1712940850535!5m2!1sen!2sbd"></script>

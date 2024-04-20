@@ -1,0 +1,396 @@
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>U Properties Ltd</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="{% static 'images/apple-touch-iconn.png' %}" type="img/x-icon" rel="shortcut icon">
+    <!-- All css files are included here. -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+    <link rel="stylesheet" href="{% static 'css/shortcode/shortcodes.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- customizer style css -->
+    <link rel="stylesheet" href="{% static 'css/style-customizer.css' %}">
+    <link href="#" data-style="styles" rel="stylesheet">
+
+
+    <!-- Modernizr JS -->
+    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+</head>
+<body>
+    <div class="wrapper white_bg">
+        <!--Header section start-->
+        {% include 'includes/header.html' %}
+        <!--Header section end-->
+
+        <!--Breadcrumbs start-->
+        <div class="breadcrumbs overlay-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumbs-inner">
+                            <div class="breadcrumbs-title text-center">
+                                <h1>Blog</h1>
+                            </div>
+                            <div class="breadcrumbs-menu">
+                                <ul>
+                                    <li><a href="{% url 'home' %}">Home /</a></li>
+                                    <li>Blog</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Breadcrumbs end-->
+       <!--Latest blog start-->
+        <div class="blog-pages pt-130">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog mb-60 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.3s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/1.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        20
+                                    </span>
+                                    <span class="post-month">
+                                        April
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                                <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog mb-60 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/2.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        25
+                                    </span>
+                                    <span class="post-month">
+                                        March
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                                <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog mb-60 wow fadeInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/3.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        04
+                                    </span>
+                                    <span class="post-month">
+                                        March
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                               <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog mb-60 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/4.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        27
+                                    </span>
+                                    <span class="post-month">
+                                        February
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                                <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog mb-60 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/5.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        12
+                                    </span>
+                                    <span class="post-month">
+                                        February
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                                <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog mb-60 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/6.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        20
+                                    </span>
+                                    <span class="post-month">
+                                        January
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                                <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog mb-60 wow fadeInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/7.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        20
+                                    </span>
+                                    <span class="post-month">
+                                        March
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                                <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog mb-60 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/8.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        20
+                                    </span>
+                                    <span class="post-month">
+                                        March
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                               <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog mb-60 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/9.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        20
+                                    </span>
+                                    <span class="post-month">
+                                        March
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                                <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog wow fadeInUp" data-wow-duration="1.4s" data-wow-delay="0.4s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/10.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        20
+                                    </span>
+                                    <span class="post-month">
+                                        March
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                                <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/11.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        20
+                                    </span>
+                                    <span class="post-month">
+                                        March
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                               <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <div class="single-blog wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <div class="blog-thubmnail">
+                                <a href="article.html">
+                                    <img src="{% static 'images/blog/12.jpg' %}" alt="">
+                                </a>
+                                <div class="blog-post">
+                                    <span class="post-day">
+                                        20
+                                    </span>
+                                    <span class="post-month">
+                                        March
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="blog-desc">
+                                <h6><a href="article.html">New Duplex Villa design with Latest Altra Concept</a></h6>
+                               <p class="post-content">U Properties Ltd Property ownership provides a sense of stability and security. It offers a place to live and call home,
+                                    which can be particularly important for families and individuals seeking long-term stability.</p>
+                                <div class="bolg-continue">
+                                    <a href="article.html">Continue Reading... ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-12">
+                        <div class="pagination">
+                            <div class="pagination-inner text-center">
+                                <ul>
+                                    <li class="prev"><a href="#"><i class="fa fa-angle-left"></i></a></li>
+                                    <li class="current">1</li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li>. . . . . .</li>
+                                    <li><a href="#">5</a></li>
+                                    <li class="next"><a href="#"><i class="fa fa-angle-right"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Latest blog end-->
+
+        <!-- Footer section start -->
+        {% include 'includes/footer.html' %}
+        <!-- Footer section end -->
+
+
+ <!-- All jquery file included here -->
+    <script src="{% static 'js/vendor/jquery-1.12.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nivo.slider.pack.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/ajax-mail.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+    <script src="{% static 'js/style-customizer.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    </div>
+</body>

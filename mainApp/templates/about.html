@@ -1,0 +1,271 @@
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>U Properties Ltd</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="{% static 'images/apple-touch-iconn.png' %}" type="img/x-icon" rel="shortcut icon">
+    <!-- All css files are included here. -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+    <link rel="stylesheet" href="{% static 'css/shortcode/shortcodes.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+    <!-- customizer style css -->
+    <link rel="stylesheet" href="{% static 'css/style-customizer.css' %}">
+    <link href="#" data-style="styles" rel="stylesheet">
+
+
+    <!-- Modernizr JS -->
+    <script src="{% static 'js/vendor/modernizr-2.8.3.min.js' %}"></script>
+</head>
+<body>
+    <div class="wrapper white_bg">
+        <!--Header section start-->
+        {% include 'includes/header.html' %}
+        <!--Header section end-->
+
+        <!--Breadcrumbs start-->
+        <div class="breadcrumbs overlay-black">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="breadcrumbs-inner">
+                            <div class="breadcrumbs-title text-center">
+                                <h1>About us</h1>
+                            </div>
+                            <div class="breadcrumbs-menu">
+                                <ul>
+                                    <li><a href="{% url 'home' %}">Home /</a></li>
+                                    <li>About us</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Breadcrumbs end-->
+        <div class="row mt-3">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <h4 class="title-1 p-2"><marquee>U Properties Ltd started their journey 2024</marquee></h4>
+            </div>
+            <div class="col-3"></div>
+        </div>
+
+        <!--Welcome Haven section-->
+        <div class="welcome-haven bg-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 fadeInLeft wow welcome-pd" data-wow-delay="0.2s">
+                        <div class="welcome-title">
+                            <h3 class="title-1">WELCOME TO <span>U Properties</span></h3>
+                            <h4 class="title-2">WE ALWAYS PROVIDE PRORITY TO OUR CUSTOMER</h4>
+                        </div>
+                        <div class="welcome-content">
+                            <p> <span>U Properties</span> is the best site for elit, sed do eiusmod tempor dolor sit amet,
+                                conse ctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et lorna
+                                aliquatd minimam, quis nostrud exercitation oris nisi ut aliquip ex ea commodo equat.
+                                eiusmod tempor dolor sit amet, conse ctetur adipiscing elit</p>
+                        </div>
+                        <div class="welcome-services">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="w-single-services">
+                                        <div class="services-img">
+                                            <img src="{% static 'images/welcome/icon-1.png' %}" alt="">
+                                        </div>
+                                        <div class="services-desc">
+                                            <h6>Low Cost</h6>
+                                            <p>Low cost provides yur best for <br> elit, sed do eiusmod tempe</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="w-single-services">
+                                        <div class="services-img">
+                                            <img src="{% static 'images/welcome/icon-2.png' %}" alt="">
+                                        </div>
+                                        <div class="services-desc">
+                                            <h6>Good Marketing </h6>
+                                            <p>Low cost provides yur best for <br> elit, sed do eiusmod tempe</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="w-single-services">
+                                        <div class="services-img">
+                                            <img src="{% static 'images/welcome/icon-3.png' %}" alt="">
+                                        </div>
+                                        <div class="services-desc">
+                                            <h6>Easy to Find</h6>
+                                            <p>Low cost provides yur best for <br> elit, sed do eiusmod tempe</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="w-single-services">
+                                        <div class="services-img">
+                                            <img src="{% static 'images/welcome/icon-4.png' %}" alt="">
+                                        </div>
+                                        <div class="services-desc">
+                                            <h6>Reliable</h6>
+                                            <p>Low cost provides yur best for <br> elit, sed do eiusmod tempe</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="welcome-haven-img fadeInRight wow" data-wow-delay="0.2s">
+                            <img src="{% static 'images/welcome/1.jpg' %}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Welcome Haven section end-->
+
+        <!--Fun fact area start-->
+        <div class="fun-fact overlay-blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-12">
+                        <div class="singe-fun-fact  f-left">
+                            <div class="fun-head">
+                                <div class="fun-icon">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                <div class="fun-count">
+                                    <h3 class="counter">
+                                        49
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="fun-text">
+                                <p>Complete Project</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="singe-fun-fact middle">
+                            <div class="fun-head">
+                                <div class="fun-icon">
+                                    <i class="fa fa-key"></i>
+                                </div>
+                                <div class="fun-count">
+                                    <h3 class="counter">
+                                        29
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="fun-text">
+                                <p>Property Sold</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="singe-fun-fact text-center middle-2">
+                            <div class="fun-head">
+                                <div class="fun-icon">
+                                    <i class="zmdi zmdi-mood"></i>
+                                </div>
+                                <div class="fun-count">
+                                    <h3 class="counter">
+                                        45
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="fun-text">
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <div class="singe-fun-fact f-right">
+                            <div class="fun-head">
+                                <div class="fun-icon">
+                                    <i class="fa fa-trophy"></i>
+                                </div>
+                                <div class="fun-count">
+                                    <h3 class="counter">
+                                        12
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="fun-text">
+                                <p>Awards Win</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Fun fact area end-->
+        <!--Brand section start-->
+        <div class="brand-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="brand-list owl-carousel">
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/1.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/2.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/3.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/4.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/5.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="{% static 'images/brand/1.png' %}" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="img/brand/2.png" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="img/brand/3.png" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="img/brand/4.png" alt=""></a>
+                            </div>
+                            <div class="single-brand">
+                                <a href="#"><img src="img/brand/5.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Brand section end-->
+
+        <!-- Footer section start -->
+        {% include 'includes/footer.html' %}
+        <!-- Footer section end -->
+
+
+ <!-- All jquery file included here -->
+    <script src="{% static 'js/vendor/jquery-1.12.0.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.nivo.slider.pack.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/ajax-mail.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.js' %}"></script>
+    <script src="{% static 'js/style-customizer.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+    </div>
+</body>
